@@ -440,18 +440,18 @@ p {
     background-color: #fff;
     color: #000000;
     border-radius: 6px;
-    padding: 10px 20px;
+    padding: 13px 25px;
     margin-top: auto;
     margin-right: auto;
     margin: auto;
     cursor: pointer;
     text-decoration: none;
     font-weight: 600;
+    font-size: 18px;
 }
 
 .btn-explorar:hover{
-    background-color: #000000;
-    border: 1px solid #fff ;
+    background-color: #AD3DFF;
     color: #fff;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -503,28 +503,24 @@ p {
     background-size: cover;
 }
 
-.curso1{
-    background-image: url(../images/MiClaseEnVideo+\(2\).png);
+.see-more {
+    padding: 5px 10px !important;
+    color: #fff !important;
+    background: #7ca7ad !important;
+    border-radius: 3px !important;
+    border: 1px solid #7ca7ad !important;
+    width: fit-content !important;
+    font-weight: 700 !important;
+    font-family: /*'Montserrat',*/ sans-serif !important;
+    /* margin: 2em auto !important; */
+    font-size: 15px !important;
+    transition: .2s !important;
 }
 
-.curso2{
-    background-image: url(../images/MiClaseEnPodcast+\(1\).jpg);
-}
-
-.curso3{
-    background-image: url(../images/Dip_GerenciaProyectos+\(1\)+\(1\).png);
-}
-
-.curso4{
-    background-image: url(../images/AprendizajeHibrido+\(1\)+\(1\).jpg);
-}
-
-.curso5{
-    background-image: url(../images/AprendizajeInvertido.jpg);
-}
-
-.curso6{
-    background-image: url(../images/TutoriaYModeracionAVA+\(1\)+\(1\).png);
+.see-more:hover {
+    color: #7ca7ad !important;
+    background: #fff !important;
+    transition: .2s ease !important;
 }
 
 .card h2{
@@ -629,15 +625,30 @@ header .right-container .links .link .link-barra:hover {
     font-weight: 500;
 }
 
-.titulo h1 {
-    text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.33) !important;
-}
-
 .texto-resaltado{
     font-family: inherit !important;
     color: #AD3DFF;
     font-weight: bold;
     font-size: 25px;
+}
+
+
+.see-more__description {
+    text-align: center;
+    font-size: 20px !important;
+    font-family: sans-serif;
+    width: 55%;
+}
+
+.see-more__header {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    margin: 15px 0px !important;
+}
+
+.banner {
+    height: auto;
+    padding: 60px 0px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -669,6 +680,7 @@ header .right-container .links .link .link-barra:hover {
     .banner{
         height: auto;
     }
+
 
     .quienes-somos-texto{
         font-size: 13pt !important;
