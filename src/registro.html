@@ -61,6 +61,19 @@
     <!--Toatify-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
+    <!--Redireccionamiento-->
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+          event.preventDefault(); // Evita que se envíe el formulario de manera predeterminada
+      
+          // Después de 3 segundos, redirige al index
+          setTimeout(function() {
+            window.location.href = "index.html";
+          }, 3000);
+        });
+      </script>
+      
+
 </body>
 
 </html>

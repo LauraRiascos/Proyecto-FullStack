@@ -56,6 +56,21 @@
 
     <!--Toatify-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!--Redireccionamiento-->
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita que se envíe el formulario de manera predeterminada
+
+            // Simula un proceso de inicio de sesión
+            // Aquí debes agregar tu lógica para verificar las credenciales y realizar la autenticación
+
+            // Después de 3 segundos, redirige al index
+            setTimeout(function () {
+                window.location.href = "index.html";
+            }, 3000);
+        });
+    </script>
 </body>
 
 </html>
