@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     let html = "";
 
     snapshot.forEach((snap) => {
-      const { nombre, precio, urlImagen } = snap.val();
+      const { nombre, precio, urlImagen, urlCurso } = snap.val();
 
       html += `
         <div class="card" id="curso-card">
@@ -26,12 +26,13 @@ window.addEventListener("DOMContentLoaded", () => {
               })
               .slice(0, -3)}</p>
 
-            <a class="see-more">Ver curso</a>
+            <a class="see-more" href="${urlCurso}">Ver curso</a>
         </div>
         `;
     });
 
     postList.innerHTML = html;
+    
   });
 });
 

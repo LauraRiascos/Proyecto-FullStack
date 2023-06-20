@@ -38,6 +38,9 @@
 
                     <div class="right-container hidden-xs">
                         <div class="links">
+                            <div class="link">
+                                <a href="index.html" title="Inicio" class="link-barra">Inicio</a>
+                            </div>
 
                             <div class="opciones-container">
                                 <input type="checkbox" class="opciones-toggle" id="opciones-toggle">
@@ -72,7 +75,7 @@
                                 </div>
                              </div> -->
 
-                            <div class="search-container">
+                             <div class="search-container">
                                 <form>
                                     <div class="input-container">
                                         <input type="text" placeholder="Buscar cursos...">
@@ -81,20 +84,24 @@
                                 </form>
                             </div>
 
-                            <div class="link" id="login">
-                                <a href="login.html" title="UPB Virtual" target="_blank" class="link-barra">Iniciar
+                            <div class="link logged-out" id="login">
+                                <a href="login.html" title="UPB Virtual" target="_parent" class="link-barra">Iniciar
                                     Sesión</a>
                             </div>
 
-                            <div class="link">
-                                <a href="registro.html" title="Future Learn" target="_blank" id="crear-cuenta"
+                            <div class="link logged-out">
+                                <a href="registro.html" title="Future Learn" target="_parent" id="crear-cuenta"
                                     class="link-barra">Crear cuenta</a>
                             </div>
 
                             <div class="link">
-                                <a href="https://www.upb.edu.co/es/upbvirtual" title="UPB Virtual" target="_blank"
-                                    class="link-barra"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a href="#" title="Carrito" target="_blank" class="link-barra logged-in"><i
+                                        class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                            </div>
 
+                            <div class="link" >
+                                <a class="link-barra logged-in" href="#" id="logout"><i
+                                        class="fas fa-sign-out-alt"></i></a>
                             </div>
 
 
@@ -341,6 +348,10 @@
         </div>
         </div>
     </footer>
+
+     <!--Toatify-->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+     <script src="./js/main-cursos.js" type="module"></script>
 
 </body>
 
